@@ -243,7 +243,7 @@ nav a:hover { color: var(--ink); }
 /* Image cards row */
 .panel-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
@@ -264,7 +264,7 @@ nav a:hover { color: var(--ink); }
 .img-card-frame {
   position: relative;
   overflow: hidden;
-  background: var(--creme);
+  background: var(--creme-dark);
   border: 1px solid var(--rule);
   aspect-ratio: 4/3;
   display: flex;
@@ -303,7 +303,7 @@ nav a:hover { color: var(--ink); }
 }
 .img-card:hover .img-card-overlay-text { opacity: 1; }
 
-/* Procesbeskrivelse button — standalone row */
+/* Procesbeskrivelse button */
 .panel-proc {
   display: flex;
   align-items: center;
@@ -512,7 +512,6 @@ footer p {
   </nav>
 </header>
 
-<!-- FORSIDE -->
 <section id="forside">
   <div class="hero-top">
     <div class="hero-eyebrow fade-up">Mediegrafikerstuderende<br>Danmark, 2024</div>
@@ -526,14 +525,12 @@ footer p {
   </div>
 </section>
 
-<!-- PROJEKTER -->
 <section id="projekter">
   <div class="projects-header fade-up">
     <span class="projects-index">01</span>
     <h2 class="projects-heading">Udvalgte projekter</h2>
   </div>
 
-  <!-- P1: Drupa -->
   <div class="project-row" onclick="tog(this)">
     <span class="project-num">01</span>
     <div class="project-title-area">
@@ -547,34 +544,32 @@ footer p {
   </div>
   <div class="project-panel">
     <div class="panel-inner">
-      <div class="panel-cards" style="grid-template-columns:1fr 1fr;">
+      <div class="panel-cards">
         <a class="img-card" href="https://drive.google.com/file/d/1Iy0gi2HhrWIro4UdoGAJ5qRGwNH9X7Yv/view?usp=sharing" target="_blank">
           <span class="img-card-label">Trykt produkt — Magasin</span>
-          <div class="img-card-frame" style="background:#e0d8cc;">
+          <div class="img-card-frame">
             <img src="images/Hovedforløb1_TryktProdukt.jpg" alt="Drupa magasin">
+            <div class="img-card-overlay"><span class="img-card-overlay-text">Åbn fil</span></div>
+          </div>
         </a>
         <a class="img-card" href="https://drive.google.com/file/d/1Si4m3reVn0aAFv987-2oGqBH52ifaQvJ/view?usp=sharing" target="_blank">
           <span class="img-card-label">Digitalt produkt — Hjemmeside</span>
-          <div class="img-card-frame" style="background:#1a1a2a;">
-           <img src="images/Hovedforløb1_DigitaltProdukt.jpg" alt="Drupa hjemmeside" style="object-fit:cover;width:100%;height:100%;">
-            <div class="img-card-overlay"><span class="img-card-overlay-text"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" style="width:11px;height:11px;"><path d="M1 7h12M8 3l4 4-4 4"/></svg>Åbn fil</span></div>
+          <div class="img-card-frame">
+            <img src="images/Hovedforløb1_DigitaltProdukt.jpg" alt="Drupa hjemmeside">
+            <div class="img-card-overlay"><span class="img-card-overlay-text">Åbn fil</span></div>
           </div>
         </a>
       </div>
       <div class="panel-proc">
         <div class="panel-desc-wrap">
-          <div class="panel-desc"><h4>Kunde &amp; opgave</h4><p>Drupa er verdens største fagmesse for trykkeri- og emballageindustrien, afholdt i Düsseldorf. Opgaven var at producere et redaktionelt magasin samt designe en landingsside der kommunikerer messens univers.</p></div>
-          <div class="panel-desc"><h4>Teknisk løsning</h4><p>Magasinet er opsat i InDesign med 3 mm bleed, CMYK-workflow og Composite CMYK til print. Hjemmesiden er designet med fokus på nem navigation, billedeslider og simpel informationsarkitektur.</p></div>
+          <div class="panel-desc"><h4>Kunde &amp; opgave</h4><p>Drupa er verdens største fagmesse for trykkeri- og emballageindustrien. Opgaven var at producere et redaktionelt magasin samt designe en landingsside.</p></div>
+          <div class="panel-desc"><h4>Teknisk løsning</h4><p>Magasinet er opsat i InDesign med 3 mm bleed og CMYK-workflow. Hjemmesiden er designet med fokus på nem navigation.</p></div>
         </div>
-        <a class="pdf-btn" href="https://drive.google.com/file/d/1cd_WT6CaATcXsK4Nfy8fR4pc_pdI5Bs6/view?usp=sharing" target="_blank">
-          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" style="width:12px;height:12px;flex-shrink:0;"><rect x="1.5" y="0.5" width="11" height="13" rx="1"/><path d="M4 4h6M4 7h6M4 10h4"/></svg>
-          Se procesbeskrivelse
-        </a>
+        <a class="pdf-btn" href="https://drive.google.com/file/d/1cd_WT6CaATcXsK4Nfy8fR4pc_pdI5Bs6/view?usp=sharing" target="_blank">Se procesbeskrivelse</a>
       </div>
     </div>
   </div>
 
-  <!-- P2: GreenMind -->
   <div class="project-row" onclick="tog(this)">
     <span class="project-num">02</span>
     <div class="project-title-area">
@@ -588,36 +583,32 @@ footer p {
   </div>
   <div class="project-panel">
     <div class="panel-inner">
-      <div class="panel-cards" style="grid-template-columns:1fr 1fr;">
+      <div class="panel-cards">
         <a class="img-card" href="https://drive.google.com/file/d/1neFLZDdcbT28ESi2k4ZncK1G8S_caI4r/view?usp=sharing" target="_blank">
           <span class="img-card-label">Trykt produkt</span>
-          <div class="img-card-frame" style="background:#0a2010;">
-           <img src="images/Hovedforløb2_TryktProdukt.jpg" alt="GreenMind trykt">
-            <div class="img-card-overlay"><span class="img-card-overlay-text"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" style="width:11px;height:11px;"><path d="M1 7h12M8 3l4 4-4 4"/></svg>Åbn fil</span></div>
+          <div class="img-card-frame">
+            <img src="images/Hovedforløb2_TryktProdukt.jpg" alt="GreenMind trykt">
+            <div class="img-card-overlay"><span class="img-card-overlay-text">Åbn fil</span></div>
           </div>
         </a>
         <a class="img-card" href="https://drive.google.com/file/d/1rtu2EaXHIq2gCMratKqTBvcjiOx_geV0/view?usp=sharing" target="_blank">
           <span class="img-card-label">Digitalt produkt — Hjemmeside</span>
-          <div class="img-card-frame" style="background:#0a2010;">
-           <img src="images/Hovedforløb2_DigitaltProdukt.jpg" alt="GreenMind digitalt" style="object-fit:cover;width:100%;height:100%;">
-            <div class="img-card-overlay"><span class="img-card-overlay-text"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" style="width:11px;height:11px;"><path d="M1 7h12M8 3l4 4-4 4"/></svg>Åbn fil</span></div>
+          <div class="img-card-frame">
+            <img src="images/Hovedforløb2_DigitaltProdukt.jpg" alt="GreenMind digitalt">
+            <div class="img-card-overlay"><span class="img-card-overlay-text">Åbn fil</span></div>
           </div>
         </a>
       </div>
       <div class="panel-proc">
         <div class="panel-desc-wrap">
-          <div class="panel-desc"><h4>Kunde &amp; opgave</h4><p>GreenMind arbejder for at gøre køb og salg af brugt elektronik nemt og trygt for danskerne. Opgaven var at designe en webshop med fokus på klar navigation, troværdighed og konvertering.</p></div>
-          <div class="panel-desc"><h4>Teknisk løsning</h4><p>Siden er designet med tydelige farver, simpel menu og produktkategorier. Grafik og billeder er behandlet i Photoshop for ensartet kvalitet og visuel profil på tværs af alle produktsider.</p></div>
+          <div class="panel-desc"><h4>Kunde &amp; opgave</h4><p>Design af en webshop med fokus på klar navigation, troværdighed og konvertering for GreenMind.</p></div>
+          <div class="panel-desc"><h4>Teknisk løsning</h4><p>Siden er designet med tydelige farver og simpel menu. Grafik er behandlet i Photoshop for ensartet kvalitet.</p></div>
         </div>
-        <a class="pdf-btn" href="https://drive.google.com/file/d/11ReNtDJEQPsNVWGW6q8MFEIhGO0Q10Y9/view?usp=sharing" target="_blank">
-          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" style="width:12px;height:12px;flex-shrink:0;"><rect x="1.5" y="0.5" width="11" height="13" rx="1"/><path d="M4 4h6M4 7h6M4 10h4"/></svg>
-          Se procesbeskrivelse
-        </a>
+        <a class="pdf-btn" href="https://drive.google.com/file/d/11ReNtDJEQPsNVWGW6q8MFEIhGO0Q10Y9/view?usp=sharing" target="_blank">Se procesbeskrivelse</a>
       </div>
     </div>
   </div>
 
-  <!-- P3: Depression / Psykiatrifonden -->
   <div class="project-row" onclick="tog(this)">
     <span class="project-num">03</span>
     <div class="project-title-area">
@@ -631,52 +622,33 @@ footer p {
   </div>
   <div class="project-panel">
     <div class="panel-inner">
-      <div class="panel-cards" style="grid-template-columns:1fr 1fr;">
+      <div class="panel-cards">
         <a class="img-card" href="https://drive.google.com/file/d/1-MEwL5Q2h24EndZ3xBWvsutmbWZNuBN7/view?usp=sharing" target="_blank">
           <span class="img-card-label">Trykt produkt — A1 plakat</span>
-          <div class="img-card-frame" style="background:#e8ebf4;">
-          <img src="images/Hovedforløb3_TryktProdukt.jpg" alt="Depression plakat">
-            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:1.75rem 1.5rem;background:#e8ebf4;">
-              <span style="font-size:clamp(0.8rem,1.5vw,1.1rem);font-weight:700;letter-spacing:0.14em;color:#2d3a6e;text-transform:uppercase;">DEPRESSION</span>
-              <div style="flex:1;display:flex;align-items:center;justify-content:center;width:100%;">
-                <div style="width:55%;aspect-ratio:3/4;position:relative;">
-                  <div style="position:absolute;inset:0;background:rgba(45,58,110,0.18);border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;"></div>
-                  <div style="position:absolute;top:20%;left:15%;width:55%;height:60%;background:rgba(45,58,110,0.25);border-radius:50%;"></div>
-                </div>
-              </div>
-              <span style="font-size:0.55rem;letter-spacing:0.1em;color:#2d3a6e;text-transform:uppercase;opacity:0.7;">Læs mere på psykiatrifonden.dk</span>
-            </div>
-            <div class="img-card-overlay"><span class="img-card-overlay-text"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" style="width:11px;height:11px;"><path d="M1 7h12M8 3l4 4-4 4"/></svg>Åbn fil</span></div>
+          <div class="img-card-frame">
+            <img src="images/Hovedforløb3_TryktProdukt.jpg" alt="Depression plakat">
+            <div class="img-card-overlay"><span class="img-card-overlay-text">Åbn fil</span></div>
           </div>
         </a>
         <a class="img-card" href="https://www.youtube.com/watch?v=eFOwF0rulS0" target="_blank">
           <span class="img-card-label">Digitalt produkt — Reklamevideo</span>
-          <div class="img-card-frame" style="background:#111;overflow:hidden;">
-           <img src="images/Hovedforløb3_DigitaltProdukt.png" alt="Reklamevideo" style="object-fit:cover;width:100%;height:100%;">
-            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.2);">
-              <div style="width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,0.92);display:flex;align-items:center;justify-content:center;">
-                <svg viewBox="0 0 12 14" fill="#111" style="width:13px;height:13px;margin-left:2px;"><path d="M1 1l10 6-10 6V1z"/></svg>
-              </div>
-            </div>
-            <div class="img-card-overlay"><span class="img-card-overlay-text"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" style="width:11px;height:11px;"><path d="M1 7h12M8 3l4 4-4 4"/></svg>Se video</span></div>
+          <div class="img-card-frame">
+            <img src="images/Hovedforløb3_DigitaltProdukt.png" alt="Reklamevideo">
+            <div class="img-card-overlay"><span class="img-card-overlay-text">Se video</span></div>
           </div>
         </a>
       </div>
       <div class="panel-proc">
         <div class="panel-desc-wrap">
-          <div class="panel-desc"><h4>Kunde &amp; opgave</h4><p>Psykiatrifonden ønskede en kampagneplakat der nedbryder tabuer om depression med budskabet: "Det er okay ikke at være okay." Projektet inkluderer både trykt A1-plakat og en digital reklamevideo.</p></div>
-          <div class="panel-desc"><h4>Teknisk løsning</h4><p>A1-plakat sat i InDesign med 3 mm bleed og Inter-typografi. Billeder behandlet i Photoshop. Reklamevideo produceret med grafisk design og billedebehandling til Arko Design.</p></div>
+          <div class="panel-desc"><h4>Kunde &amp; opgave</h4><p>En kampagneplakat der nedbryder tabuer om depression. Projektet inkluderer både trykt A1-plakat og en reklamevideo.</p></div>
+          <div class="panel-desc"><h4>Teknisk løsning</h4><p>A1-plakat sat i InDesign med 3 mm bleed. Video produceret med grafisk design og billedebehandling.</p></div>
         </div>
-        <a class="pdf-btn" href="https://drive.google.com/file/d/1RrQg1fbR5ELKNdVUc14gWGRvak0qGBkH/view?usp=sharing" target="_blank">
-          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" style="width:12px;height:12px;flex-shrink:0;"><rect x="1.5" y="0.5" width="11" height="13" rx="1"/><path d="M4 4h6M4 7h6M4 10h4"/></svg>
-          Se procesbeskrivelse
-        </a>
+        <a class="pdf-btn" href="https://drive.google.com/file/d/1RrQg1fbR5ELKNdVUc14gWGRvak0qGBkH/view?usp=sharing" target="_blank">Se procesbeskrivelse</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- OM MIG -->
 <section id="om-mig">
   <div class="om-left fade-up">
     <div>
@@ -701,7 +673,6 @@ footer p {
   </div>
 </section>
 
-<!-- KONTAKT -->
 <section id="kontakt">
   <div class="fade-up">
     <div class="k-eyebrow">Kontakt</div>
@@ -735,8 +706,14 @@ window.addEventListener('scroll', () => hdr.classList.toggle('ruled', scrollY > 
 function tog(row) {
   const panel = row.nextElementSibling;
   const isOpen = panel.classList.contains('open');
-  document.querySelectorAll('.project-row.open').forEach(r => { r.classList.remove('open'); r.nextElementSibling.classList.remove('open'); });
-  if (!isOpen) { row.classList.add('open'); panel.classList.add('open'); }
+  document.querySelectorAll('.project-row.open').forEach(r => { 
+    r.classList.remove('open'); 
+    r.nextElementSibling.classList.remove('open'); 
+  });
+  if (!isOpen) { 
+    row.classList.add('open'); 
+    panel.classList.add('open'); 
+  }
 }
 
 const obs = new IntersectionObserver(entries => {
