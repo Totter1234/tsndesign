@@ -12,16 +12,18 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:             #1a1610;
-      --surface:        #231e17;
-      --surface-2:      #2b2419;
-      --text:           #f0ece2;
-      --text-muted:     #8a7f6e;
-      --accent:         #c8a76a;
-      --accent-bg:      rgba(200, 167, 106, 0.07);
-      --accent-border:  rgba(200, 167, 106, 0.28);
-      --border:         rgba(240, 236, 226, 0.08);
-      --border-hover:   rgba(240, 236, 226, 0.18);
+      --bg:             #F0E8D4;
+      --surface:        #E6DAC4;
+      --surface-2:      #D9CEAD;
+      --text:           #1A1410;
+      --text-muted:     #5C4830;
+      --accent:         #C05828;
+      --accent-bg:      rgba(192, 88, 40, 0.09);
+      --accent-border:  rgba(192, 88, 40, 0.35);
+      --border:         rgba(39, 34, 32, 0.20);
+      --border-hover:   rgba(39, 34, 32, 0.40);
+      --patina:         #4E7B6D;
+      --blæk:           #2D4D7C;
       --radius:         6px;
     }
 
@@ -56,7 +58,7 @@
       position: absolute;
       top: -150px; right: -80px;
       width: 700px; height: 700px;
-      background: radial-gradient(circle, rgba(200,167,106,0.07) 0%, transparent 65%);
+      background: radial-gradient(circle, rgba(192,88,40,0.06) 0%, transparent 65%);
       pointer-events: none;
     }
 
@@ -104,13 +106,13 @@
 
     .meta-item {
       font-size: 13px;
-      color: var(--text-muted);
+      color: var(--text);
       padding-right: 24px;
     }
 
     .meta-item strong {
       color: var(--text);
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .meta-sep {
@@ -165,14 +167,16 @@
       border: 1px solid var(--border);
       border-radius: var(--radius);
       cursor: pointer;
-      transition: border-color 0.25s, background 0.25s, transform 0.25s;
+      transition: border-color 0.25s, background 0.25s, transform 0.25s, box-shadow 0.25s;
       aspect-ratio: 1;
+      box-shadow: 0 1px 4px rgba(39,34,32,0.06);
     }
 
     .hf-btn:hover {
       border-color: var(--border-hover);
       background: var(--surface-2);
       transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(39,34,32,0.10);
     }
 
     /* HF 4 is gold – most important */
@@ -182,8 +186,8 @@
     }
 
     .hf-btn.is-primary:hover {
-      background: rgba(200,167,106,0.13);
-      border-color: rgba(200,167,106,0.5);
+      background: rgba(192,88,40,0.13);
+      border-color: rgba(192,88,40,0.5);
     }
 
     .hf-btn-label {
@@ -205,12 +209,12 @@
       line-height: 1;
       letter-spacing: -0.04em;
       color: var(--text);
-      opacity: 0.35;
+      opacity: 0.25;
     }
 
     .hf-btn.is-primary .hf-btn-num {
       color: var(--accent);
-      opacity: 0.7;
+      opacity: 0.65;
     }
 
     .hf-btn-arrow {
@@ -221,9 +225,9 @@
 
     .hf-btn-title {
       font-size: 11px;
-      font-weight: 600;
+      font-weight: 700;
       letter-spacing: 0.06em;
-      color: var(--text-muted);
+      color: var(--text);
     }
 
     .hf-btn.is-primary .hf-btn-title {
@@ -257,7 +261,7 @@
       position: sticky;
       top: 0;
       z-index: 200;
-      background: rgba(26,22,16,0.93);
+      background: rgba(240, 232, 212, 0.95);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border);
@@ -272,7 +276,7 @@
       font-size: 12px;
       font-weight: 600;
       letter-spacing: 0.06em;
-      color: var(--text-muted);
+      color: var(--text);
     }
 
     .nav-tabs {
@@ -288,7 +292,7 @@
       font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--text-muted);
+      color: var(--text);
       border-radius: var(--radius);
       transition: color 0.2s, background 0.2s;
     }
@@ -338,7 +342,7 @@
       font-weight: 300;
       line-height: 1;
       color: var(--accent);
-      opacity: 0.3;
+      opacity: 0.45;
       letter-spacing: -0.04em;
       user-select: none;
     }
@@ -365,7 +369,7 @@
     .badge {
       display: inline-block;
       background: var(--accent);
-      color: #0c0c0c;
+      color: #ffffff;
       font-family: 'Syne', sans-serif;
       font-size: 8px;
       font-weight: 800;
@@ -397,8 +401,8 @@
     }
 
     .process-link:hover {
-      background: rgba(200,167,106,0.13);
-      border-color: rgba(200,167,106,0.5);
+      background: rgba(192,88,40,0.12);
+      border-color: rgba(192,88,40,0.5);
       transform: translateY(-2px);
     }
 
@@ -411,7 +415,7 @@
     .process-icon-wrap {
       width: 50px; height: 50px;
       border-radius: 50%;
-      background: rgba(200,167,106,0.12);
+      background: rgba(192,88,40,0.1);
       border: 1px solid var(--accent-border);
       display: flex;
       align-items: center;
@@ -455,7 +459,7 @@
       gap: 8px;
       padding: 12px 22px;
       background: var(--accent);
-      color: #0c0c0c;
+      color: #ffffff;
       font-family: 'Syne', sans-serif;
       font-size: 11px;
       font-weight: 700;
@@ -491,12 +495,14 @@
       border: 1px solid var(--border);
       border-radius: var(--radius);
       overflow: hidden;
-      transition: border-color 0.25s, transform 0.25s;
+      transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+      box-shadow: 0 1px 4px rgba(39,34,32,0.06);
     }
 
     .product-card:hover {
       border-color: var(--border-hover);
       transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(39,34,32,0.10);
     }
 
     .prod-img-wrap {
@@ -577,12 +583,12 @@
       text-transform: uppercase;
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      transition: border-color 0.2s, color 0.2s;
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
       flex-shrink: 0;
       white-space: nowrap;
     }
 
-    .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-bg); }
 
     .btn-outline svg {
       width: 11px; height: 11px;
@@ -604,6 +610,7 @@
       font-size: 12px;
       color: var(--text-muted);
       letter-spacing: 0.04em;
+      font-weight: 600;
     }
 
     /* ─────────────────────────────
